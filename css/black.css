@@ -1,0 +1,38 @@
+:root{
+  --mainColor: rgb(233, 233, 233);
+	--secondarycol:rgb(24, 23, 23);
+  /* --txtcol: rgb(95, 87, 87); */
+  --textcol: #f79f1f;
+  --bordercol: #3a2c2c;
+
+  --themeDotBorder: #24292e;
+
+  --previewcol: rgba(251, 249, 243, 0.8);
+  --preshadow: rgb(241, 224, 224);
+
+  --buttonColor: black;
+  --linkColor: rgb(96, 205, 209);
+}
+
+
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  color: #f2aa4cff;
+  font-family: 'Bree Serif', serif;
+  font-weight: 1000;
+  letter-spacing: 3px;
+}
+
+p,
+li,
+span,
+label,
+input,
+textarea {
+  color: var(--textcol);
+  font-family: 'Roboto Mono', monospace;
+}
