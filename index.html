@@ -18,18 +18,9 @@
       href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto+Mono:wght@500&family=Source+Code+Pro:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="css/style.css"
-    />
-    <!-- <link
-      id="second-theme"
-      rel="stylesheet"
-      type="text/css"
-      href="css/blue.css"
-    />
-     -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link id="theme-color" rel="stylesheet" href="" />
+
     <!-- <link
       id="last-theme"
       rel="stylesheet"
@@ -70,10 +61,10 @@
               Personalise Theme
             </h5>
             <div class="theme-wrapper">
-              <div id="orange-mode" class="theme-dot"></div>
-              <div id="light-mode" class="theme-dot"></div>
-              <div id="blue-mode" class="theme-dot"></div>
-              <div id="dark-mode" class="theme-dot"></div>
+              <div data-mode="orange" id="orange-mode" class="theme-box"></div>
+              <div data-mode="light" id="light-mode" class="theme-box"></div>
+              <div data-mode="sky" id="blue-mode" class="theme-box"></div>
+              <div data-mode="dark" id="dark-mode" class="theme-box"></div>
             </div>
             <p id="setting">
               *Theme settings will be saved for <br />
@@ -147,7 +138,7 @@
             <img id="socialimg" src="images/pc.jpg" alt="" />
             <h3>Find me on Twitter & LinkedIn</h3>
             <div class="personal-links">
-              <h4>Twitter: </h4>
+              <h4>Twitter:</h4>
               <a href="https://twitter.com/olatunjioluwap5">olatunjioluwap5</a>
             </div>
 
@@ -216,19 +207,21 @@
     <section class="sec2" id="reachMe">
       <div style="padding: 30px 0" class="main-container">
         <h3 style="text-align: center">Reach out to me</h3>
-        <form id="contact-form" action="">
+        <form id="contact-form" action="https://formsubmit.co/samsontunj@gmail.com" method="POST">
           <label for="">Name</label>
-          <input type="text" name="name" class="input-field" />
+          <input type="text" name="name" class="input-field" required />
           <label for="">Subject</label>
-          <input type="text" class="input-field" name="subject" />
+          <input type="text" class="input-field" name="subject" required />
           <label for="">Email</label>
-          <input type="email" class="input-field" name="email" />
+          <input type="email" class="input-field" name="email" required />
           <label for="">Message</label>
           <textarea name="message" class="input-field"></textarea>
 
-          <input id="submit-btn" type="submit" value="Send" />
+          <button id="submit-btn" type="submit">Send</button>
         </form>
       </div>
     </section>
+
+    <script src="./script.js" type="text/javascript"></script>
   </body>
 </html>

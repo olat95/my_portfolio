@@ -20,6 +20,10 @@ body {
   padding: 0;
 }
 
+body * {
+  transition: 0.3s;
+}
+
 h1,
 h2,
 h3,
@@ -176,7 +180,7 @@ ul {
   justify-content: center;
 }
 
-.theme-dot {
+.theme-box {
   height: 30px;
   width: 30px;
   margin: 5px;
@@ -188,7 +192,7 @@ ul {
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 }
-.theme-dot:hover {
+.theme-box:hover {
   border-width: 5px;
 }
 
@@ -358,7 +362,7 @@ ul {
 .input-field {
   width: 100%;
   padding: 10px 0;
-  /* background-color: var(); */
+  color: black;
   border-radius: 5px;
   border: 1px solid var(--bordercol);
   font-size: 14px;
@@ -370,6 +374,7 @@ ul {
   color: white;
   background-color: var(--buttonColor);
   border: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
