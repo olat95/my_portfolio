@@ -1,16 +1,14 @@
-console.log('cool')
-
-let theme = localStorage.getItem('theme')
-if (theme == null){
+const theme = localStorage.getItem('theme')
+if (theme == null) {
   setTheme('orange')
 } else {
   setTheme(theme)
 }
 
-let themeBoxes = document.getElementsByClassName('theme-box')
+const themeBoxes = document.getElementsByClassName('theme-box')
 
 for (let i = 0; themeBoxes.length > i; i++) {
-  themeBoxes[i].addEventListener('click', function(){
+  themeBoxes[i].addEventListener('click', function () {
     let mode = this.dataset.mode
     console.log('box clicked: ', mode)
     setTheme(mode)
@@ -18,16 +16,19 @@ for (let i = 0; themeBoxes.length > i; i++) {
 }
 
 function setTheme(mode) {
-  if(mode == 'orange'){
+  if (mode === 'orange') {
     document.getElementById('theme-color').href = 'css/style.css'
   }
-  if(mode == 'dark'){
+
+  if (mode === 'dark') {
     document.getElementById('theme-color').href = 'css/black.css'
   }
-  if(mode == 'sky'){
+
+  if (mode === 'sky') {
     document.getElementById('theme-color').href = 'css/blue.css'
   }
-  if(mode == 'light'){
+
+  if (mode === 'light') {
     document.getElementById('theme-color').href = 'css/light.css'
   }
 
