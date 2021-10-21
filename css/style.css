@@ -4,23 +4,16 @@
   --txtcol: rgb(95, 87, 87);
   --textcol: grey;
   --bordercol: #3a2c2c;
-
   --themeDotBorder: #24292e;
-
   --previewcol: rgba(251, 249, 243, 0.8);
   --preshadow: rgb(241, 224, 224);
-
   --buttonColor: black;
   --linkColor: cadetblue;
 }
 
-html,
-body {
+* {
   margin: 0;
   padding: 0;
-}
-
-body * {
   transition: 0.3s;
 }
 
@@ -57,7 +50,7 @@ ul {
   list-style: none;
 }
 
-.personal-links{
+.personal-links {
   display: flex;
   justify-content: center;
   align-items: center;
