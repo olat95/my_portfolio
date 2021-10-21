@@ -9,7 +9,7 @@ const themeBoxes = document.getElementsByClassName('theme-box')
 
 for (let i = 0; themeBoxes.length > i; i++) {
   themeBoxes[i].addEventListener('click', function () {
-    let mode = this.dataset.mode
+    const mode = this.dataset.mode
     console.log('box clicked: ', mode)
     setTheme(mode)
   })
